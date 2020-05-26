@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1079AFB9E8163866CFE0C15C /* Pods_CiteCamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BBE99542B41B7A4809E93C /* Pods_CiteCamTests.framework */; };
+		7D5E54C6E5334DE84DBC0871 /* Pods_CiteCamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396E69B732D6DCB1C3C63A97 /* Pods_CiteCamUITests.framework */; };
+		9A1A28EC1DCD6F89008FB30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1A28EB1DCD6F89008FB30F /* Assets.xcassets */; };
+		9A1A28FA1DCD6F8A008FB30F /* CiteCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A28F91DCD6F8A008FB30F /* CiteCamTests.swift */; };
+		9A1A29051DCD6F8A008FB30F /* CiteCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A29041DCD6F8A008FB30F /* CiteCamUITests.swift */; };
+		9A1A291D1DCD7C0A008FB30F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A291C1DCD7C0A008FB30F /* ViewController.swift */; };
+		9A1A63091DF6EADF00FC9998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A63081DF6EADF00FC9998 /* AppDelegate.swift */; };
+		9AA3477C1DF58F3E00747981 /* ISBN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA3477B1DF58F3E00747981 /* ISBN.swift */; };
+		9AA3477E1DF5A7F500747981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA3477D1DF5A7F500747981 /* Main.storyboard */; };
+		9AB54C5F1DF7088A0043CA19 /* GoogleBookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB54C5E1DF7088A0043CA19 /* GoogleBookService.swift */; };
+		9AC0C27D1DF14644000B0F33 /* CitationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC0C27C1DF14644000B0F33 /* CitationTableViewController.swift */; };
+		9AD5C5761DDF0019008FB575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD5C5751DDF0019008FB575 /* LaunchScreen.storyboard */; };
+		9AD5C5911DDF12C4008FB575 /* Citation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5C58D1DDF12C4008FB575 /* Citation.swift */; };
+		9AD5C5921DDF12C4008FB575 /* CitationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5C58E1DDF12C4008FB575 /* CitationTableViewCell.swift */; };
+		9AD5C5941DDF12C4008FB575 /* CitationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5C5901DDF12C4008FB575 /* CitationViewController.swift */; };
+		DCBEDC1E7C474D90C4F27A46 /* Pods_CiteCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706E24362D62FF6B0B18C34F /* Pods_CiteCam.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A1A28F61DCD6F89008FB30F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1A28D91DCD6F89008FB30F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A1A28E01DCD6F89008FB30F;
+			remoteInfo = CiteCam;
+		};
+		9A1A29011DCD6F8A008FB30F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A1A28D91DCD6F89008FB30F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A1A28E01DCD6F89008FB30F;
+			remoteInfo = CiteCam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A609797A0AE8455F4563E85 /* Pods-CiteCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiteCam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CiteCam/Pods-CiteCam.debug.xcconfig"; sourceTree = "<group>"; };
+		396E69B732D6DCB1C3C63A97 /* Pods_CiteCamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CiteCamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68BBE99542B41B7A4809E93C /* Pods_CiteCamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CiteCamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		706E24362D62FF6B0B18C34F /* Pods_CiteCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CiteCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		915D7746EA5DF6F68314EC1C /* Pods-CiteCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiteCam.release.xcconfig"; path = "Pods/Target Support Files/Pods-CiteCam/Pods-CiteCam.release.xcconfig"; sourceTree = "<group>"; };
+		9A1A28E11DCD6F89008FB30F /* CiteCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiteCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1A28EB1DCD6F89008FB30F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A1A28F01DCD6F89008FB30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1A28F51DCD6F89008FB30F /* CiteCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CiteCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1A28F91DCD6F8A008FB30F /* CiteCamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteCamTests.swift; sourceTree = "<group>"; };
+		9A1A28FB1DCD6F8A008FB30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1A29001DCD6F8A008FB30F /* CiteCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CiteCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1A29041DCD6F8A008FB30F /* CiteCamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiteCamUITests.swift; sourceTree = "<group>"; };
+		9A1A29061DCD6F8A008FB30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1A291C1DCD7C0A008FB30F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
+		9A1A63081DF6EADF00FC9998 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; usesTabs = 0; };
+		9AA3477B1DF58F3E00747981 /* ISBN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISBN.swift; sourceTree = "<group>"; usesTabs = 0; };
+		9AA3477D1DF5A7F500747981 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9AB54C5E1DF7088A0043CA19 /* GoogleBookService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleBookService.swift; sourceTree = "<group>"; usesTabs = 0; };
+		9AC0C27C1DF14644000B0F33 /* CitationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitationTableViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
+		9AD5C5751DDF0019008FB575 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AD5C58D1DDF12C4008FB575 /* Citation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Citation.swift; sourceTree = "<group>"; usesTabs = 0; };
+		9AD5C58E1DDF12C4008FB575 /* CitationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitationTableViewCell.swift; sourceTree = "<group>"; usesTabs = 0; };
+		9AD5C5901DDF12C4008FB575 /* CitationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitationViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
+		9B0ED18AD2613981137EE581 /* Pods-CiteCamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiteCamUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CiteCamUITests/Pods-CiteCamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB5C4D0C8AE6BDFFC50846AB /* Pods-CiteCamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiteCamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CiteCamTests/Pods-CiteCamTests.release.xcconfig"; sourceTree = "<group>"; };
+		E25CA264C98D44E69C959EC5 /* Pods-CiteCamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiteCamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CiteCamUITests/Pods-CiteCamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEE40720C7EEACCA53791F36 /* Pods-CiteCamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiteCamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CiteCamTests/Pods-CiteCamTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A1A28DE1DCD6F89008FB30F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBEDC1E7C474D90C4F27A46 /* Pods_CiteCam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1A28F21DCD6F89008FB30F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1079AFB9E8163866CFE0C15C /* Pods_CiteCamTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1A28FD1DCD6F8A008FB30F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D5E54C6E5334DE84DBC0871 /* Pods_CiteCamUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A374E8A4E138CB27B005FAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A609797A0AE8455F4563E85 /* Pods-CiteCam.debug.xcconfig */,
+				915D7746EA5DF6F68314EC1C /* Pods-CiteCam.release.xcconfig */,
+				FEE40720C7EEACCA53791F36 /* Pods-CiteCamTests.debug.xcconfig */,
+				BB5C4D0C8AE6BDFFC50846AB /* Pods-CiteCamTests.release.xcconfig */,
+				E25CA264C98D44E69C959EC5 /* Pods-CiteCamUITests.debug.xcconfig */,
+				9B0ED18AD2613981137EE581 /* Pods-CiteCamUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		27FC38772C97D20459BCD73C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				706E24362D62FF6B0B18C34F /* Pods_CiteCam.framework */,
+				68BBE99542B41B7A4809E93C /* Pods_CiteCamTests.framework */,
+				396E69B732D6DCB1C3C63A97 /* Pods_CiteCamUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A1A28D81DCD6F89008FB30F = {
+			isa = PBXGroup;
+			children = (
+				9A1A28E31DCD6F89008FB30F /* CiteCam */,
+				9A1A28F81DCD6F89008FB30F /* CiteCamTests */,
+				9A1A29031DCD6F8A008FB30F /* CiteCamUITests */,
+				9A1A28E21DCD6F89008FB30F /* Products */,
+				1A374E8A4E138CB27B005FAF /* Pods */,
+				27FC38772C97D20459BCD73C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9A1A28E21DCD6F89008FB30F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A1A28E11DCD6F89008FB30F /* CiteCam.app */,
+				9A1A28F51DCD6F89008FB30F /* CiteCamTests.xctest */,
+				9A1A29001DCD6F8A008FB30F /* CiteCamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A1A28E31DCD6F89008FB30F /* CiteCam */ = {
+			isa = PBXGroup;
+			children = (
+				9A1A63081DF6EADF00FC9998 /* AppDelegate.swift */,
+				9AD5C58D1DDF12C4008FB575 /* Citation.swift */,
+				9AD5C58E1DDF12C4008FB575 /* CitationTableViewCell.swift */,
+				9AC0C27C1DF14644000B0F33 /* CitationTableViewController.swift */,
+				9AD5C5901DDF12C4008FB575 /* CitationViewController.swift */,
+				9AA3477B1DF58F3E00747981 /* ISBN.swift */,
+				9AB54C5E1DF7088A0043CA19 /* GoogleBookService.swift */,
+				9A1A291C1DCD7C0A008FB30F /* ViewController.swift */,
+				9AA3477D1DF5A7F500747981 /* Main.storyboard */,
+				9A1A28EB1DCD6F89008FB30F /* Assets.xcassets */,
+				9AD5C5751DDF0019008FB575 /* LaunchScreen.storyboard */,
+				9A1A28F01DCD6F89008FB30F /* Info.plist */,
+			);
+			path = CiteCam;
+			sourceTree = "<group>";
+		};
+		9A1A28F81DCD6F89008FB30F /* CiteCamTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A1A28F91DCD6F8A008FB30F /* CiteCamTests.swift */,
+				9A1A28FB1DCD6F8A008FB30F /* Info.plist */,
+			);
+			path = CiteCamTests;
+			sourceTree = "<group>";
+		};
+		9A1A29031DCD6F8A008FB30F /* CiteCamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A1A29041DCD6F8A008FB30F /* CiteCamUITests.swift */,
+				9A1A29061DCD6F8A008FB30F /* Info.plist */,
+			);
+			path = CiteCamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A1A28E01DCD6F89008FB30F /* CiteCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1A29091DCD6F8A008FB30F /* Build configuration list for PBXNativeTarget "CiteCam" */;
+			buildPhases = (
+				1FD5674180FB62CBB2D18794 /* [CP] Check Pods Manifest.lock */,
+				9A1A28DD1DCD6F89008FB30F /* Sources */,
+				9A1A28DE1DCD6F89008FB30F /* Frameworks */,
+				9A1A28DF1DCD6F89008FB30F /* Resources */,
+				7EA0A3665721F4D918F5F511 /* [CP] Embed Pods Frameworks */,
+				B479B2BE3A1EA8C6C81BCDCB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CiteCam;
+			productName = CiteCam;
+			productReference = 9A1A28E11DCD6F89008FB30F /* CiteCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A1A28F41DCD6F89008FB30F /* CiteCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1A290C1DCD6F8A008FB30F /* Build configuration list for PBXNativeTarget "CiteCamTests" */;
+			buildPhases = (
+				FAA34DE3E4FB2493226B7E8B /* [CP] Check Pods Manifest.lock */,
+				9A1A28F11DCD6F89008FB30F /* Sources */,
+				9A1A28F21DCD6F89008FB30F /* Frameworks */,
+				9A1A28F31DCD6F89008FB30F /* Resources */,
+				003E264CAAC1EE9E8AD0489B /* [CP] Embed Pods Frameworks */,
+				178A465BA59D7D8C918AAC97 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A1A28F71DCD6F89008FB30F /* PBXTargetDependency */,
+			);
+			name = CiteCamTests;
+			productName = CiteCamTests;
+			productReference = 9A1A28F51DCD6F89008FB30F /* CiteCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A1A28FF1DCD6F8A008FB30F /* CiteCamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1A290F1DCD6F8A008FB30F /* Build configuration list for PBXNativeTarget "CiteCamUITests" */;
+			buildPhases = (
+				AA3E5FEADFAE1C1BBE93D3C9 /* [CP] Check Pods Manifest.lock */,
+				9A1A28FC1DCD6F8A008FB30F /* Sources */,
+				9A1A28FD1DCD6F8A008FB30F /* Frameworks */,
+				9A1A28FE1DCD6F8A008FB30F /* Resources */,
+				86C8174DD5261CD10D18339E /* [CP] Embed Pods Frameworks */,
+				BFA243947275997D7DB94D7E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A1A29021DCD6F8A008FB30F /* PBXTargetDependency */,
+			);
+			name = CiteCamUITests;
+			productName = CiteCamUITests;
+			productReference = 9A1A29001DCD6F8A008FB30F /* CiteCamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A1A28D91DCD6F89008FB30F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Fiver;
+				TargetAttributes = {
+					9A1A28E01DCD6F89008FB30F = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					9A1A28F41DCD6F89008FB30F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A1A28E01DCD6F89008FB30F;
+					};
+					9A1A28FF1DCD6F8A008FB30F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9A1A28E01DCD6F89008FB30F;
+					};
+				};
+			};
+			buildConfigurationList = 9A1A28DC1DCD6F89008FB30F /* Build configuration list for PBXProject "CiteCam" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A1A28D81DCD6F89008FB30F;
+			productRefGroup = 9A1A28E21DCD6F89008FB30F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A1A28E01DCD6F89008FB30F /* CiteCam */,
+				9A1A28F41DCD6F89008FB30F /* CiteCamTests */,
+				9A1A28FF1DCD6F8A008FB30F /* CiteCamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A1A28DF1DCD6F89008FB30F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1A28EC1DCD6F89008FB30F /* Assets.xcassets in Resources */,
+				9AD5C5761DDF0019008FB575 /* LaunchScreen.storyboard in Resources */,
+				9AA3477E1DF5A7F500747981 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1A28F31DCD6F89008FB30F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1A28FE1DCD6F8A008FB30F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003E264CAAC1EE9E8AD0489B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CiteCamTests/Pods-CiteCamTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		178A465BA59D7D8C918AAC97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CiteCamTests/Pods-CiteCamTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FD5674180FB62CBB2D18794 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA0A3665721F4D918F5F511 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CiteCam/Pods-CiteCam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C8174DD5261CD10D18339E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CiteCamUITests/Pods-CiteCamUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA3E5FEADFAE1C1BBE93D3C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B479B2BE3A1EA8C6C81BCDCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CiteCam/Pods-CiteCam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFA243947275997D7DB94D7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CiteCamUITests/Pods-CiteCamUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAA34DE3E4FB2493226B7E8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A1A28DD1DCD6F89008FB30F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1A63091DF6EADF00FC9998 /* AppDelegate.swift in Sources */,
+				9AD5C5941DDF12C4008FB575 /* CitationViewController.swift in Sources */,
+				9AA3477C1DF58F3E00747981 /* ISBN.swift in Sources */,
+				9AB54C5F1DF7088A0043CA19 /* GoogleBookService.swift in Sources */,
+				9AD5C5911DDF12C4008FB575 /* Citation.swift in Sources */,
+				9AC0C27D1DF14644000B0F33 /* CitationTableViewController.swift in Sources */,
+				9A1A291D1DCD7C0A008FB30F /* ViewController.swift in Sources */,
+				9AD5C5921DDF12C4008FB575 /* CitationTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1A28F11DCD6F89008FB30F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1A28FA1DCD6F8A008FB30F /* CiteCamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A1A28FC1DCD6F8A008FB30F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1A29051DCD6F8A008FB30F /* CiteCamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A1A28F71DCD6F89008FB30F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A1A28E01DCD6F89008FB30F /* CiteCam */;
+			targetProxy = 9A1A28F61DCD6F89008FB30F /* PBXContainerItemProxy */;
+		};
+		9A1A29021DCD6F8A008FB30F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A1A28E01DCD6F89008FB30F /* CiteCam */;
+			targetProxy = 9A1A29011DCD6F8A008FB30F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9A1A29071DCD6F8A008FB30F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A1A29081DCD6F8A008FB30F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A1A290A1DCD6F8A008FB30F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A609797A0AE8455F4563E85 /* Pods-CiteCam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5AYQDARGJU;
+				INFOPLIST_FILE = CiteCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiver.CiteCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CiteCam/CiteCam-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		9A1A290B1DCD6F8A008FB30F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915D7746EA5DF6F68314EC1C /* Pods-CiteCam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5AYQDARGJU;
+				INFOPLIST_FILE = CiteCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiver.CiteCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CiteCam/CiteCam-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		9A1A290D1DCD6F8A008FB30F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEE40720C7EEACCA53791F36 /* Pods-CiteCamTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5AYQDARGJU;
+				INFOPLIST_FILE = CiteCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiver.CiteCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CiteCam.app/CiteCam";
+			};
+			name = Debug;
+		};
+		9A1A290E1DCD6F8A008FB30F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB5C4D0C8AE6BDFFC50846AB /* Pods-CiteCamTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5AYQDARGJU;
+				INFOPLIST_FILE = CiteCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiver.CiteCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CiteCam.app/CiteCam";
+			};
+			name = Release;
+		};
+		9A1A29101DCD6F8A008FB30F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E25CA264C98D44E69C959EC5 /* Pods-CiteCamUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				DEVELOPMENT_TEAM = 5AYQDARGJU;
+				INFOPLIST_FILE = CiteCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiver.CiteCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CiteCam;
+			};
+			name = Debug;
+		};
+		9A1A29111DCD6F8A008FB30F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B0ED18AD2613981137EE581 /* Pods-CiteCamUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				DEVELOPMENT_TEAM = 5AYQDARGJU;
+				INFOPLIST_FILE = CiteCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiver.CiteCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CiteCam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A1A28DC1DCD6F89008FB30F /* Build configuration list for PBXProject "CiteCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1A29071DCD6F8A008FB30F /* Debug */,
+				9A1A29081DCD6F8A008FB30F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1A29091DCD6F8A008FB30F /* Build configuration list for PBXNativeTarget "CiteCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1A290A1DCD6F8A008FB30F /* Debug */,
+				9A1A290B1DCD6F8A008FB30F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1A290C1DCD6F8A008FB30F /* Build configuration list for PBXNativeTarget "CiteCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1A290D1DCD6F8A008FB30F /* Debug */,
+				9A1A290E1DCD6F8A008FB30F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A1A290F1DCD6F8A008FB30F /* Build configuration list for PBXNativeTarget "CiteCamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1A29101DCD6F8A008FB30F /* Debug */,
+				9A1A29111DCD6F8A008FB30F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A1A28D91DCD6F89008FB30F /* Project object */;
+}
